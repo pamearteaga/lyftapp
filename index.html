@@ -13,7 +13,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>Lift</title>
 </head>
-<body>
+<body onload="splash()">
+  <!-- loader-->
+<div id="loader"><img src="assets/img/logo-pink.png" style="width: 80%;"></div>
+<div id="content" class="deslizar hidden">
+
+
   <header id="inicio" class="fondo">
    <div class="container-fluid">
     <div class="row">
@@ -31,7 +36,7 @@
     <div class="row">
      <div class="col-xs-12">
       <form>
-        <div><span class="glyphicon glyphicon-chevron-left margin" aria-hidden="true"></span><span>BACK</span></div>
+        <a><span class="glyphicon glyphicon-chevron-left margin" aria-hidden="true"></span><span>BACK</span></a>
         <h3>Sing Up</h3>
         <p>Join now for free ride credit</p>
         <hr>
@@ -45,7 +50,7 @@
               <li><img src="assets/img/if_United-States-of-America_298411.png" class="img-responsive"></li>
             </ul>
           </div><!-- /btn-group -->
-          <input type="text" class="form-control" aria-label="...">
+          <input type="number" class="form-control" aria-label="..." placeholder="Enter your phone number">
         </div><!-- /input-group -->
         <p class="margin">We'll send a text to verify you phone</p>
         <button type="button" class="btn bpink btn-lg btn-block" disabled="disabled">NEXT</button>
@@ -55,37 +60,66 @@
    </div><!--container-->
   </div><!--singup-->
 
-
     <div id="verify">
    <div class="container-fluid">
     <div class="row">
      <div class="col-xs-12">
       <form>
-        <div><span class="glyphicon glyphicon-chevron-left margin" aria-hidden="true"></span><span>BACK</span></div>
-        <h3>Sing Up</h3>
+        <a><span class="glyphicon glyphicon-chevron-left margin" aria-hidden="true"></span><span>BACK</span></a>
+        <h3>Verify phone number</h3>
         <p>Join now for free ride credit</p>
         <hr>
         <div class="input-group">
-          <div class="input-group-btn">
-            <button type="button" class="btn dropdown-toggle b" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">País<span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><img src="assets/img/if_Colombia_298555.png" class="img-responsive"></li>
-              <li><img src="assets/img/if_Mexico_298458.png" class="img-responsive"></li>
-              <li><img src="assets/img/if_Peru_298404.png" class="img-responsive"></li>
-              <li><img src="assets/img/if_United-States-of-America_298411.png" class="img-responsive"></li>
-            </ul>
-          </div><!-- /btn-group -->
-          <input type="text" class="form-control" aria-label="...">
-        </div><!-- /input-group -->
-        <p class="margin">We'll send a text to verify you phone</p>
+         <p class="input-group-addon b" id="basic-addon1">LAB</p>
+         <input type="number" class="form-control" placeholder="3 Digits" aria-describedby="basic-addon1">
+        </div>
+        <p class="margin">Enter the code send to +56 9 61918586</p>
+        <button type="button" class="btn b" style="margin-bottom: 20px;">Resend code</button>
         <button type="button" class="btn bpink btn-lg btn-block" disabled="disabled">NEXT</button>
       </form>
      </div><!--col12-->
     </div><!--row-->
-   </div><!--container-
+   </div><!--container-->
+ </div><!--verify-->
+
+ <div id="laststep">
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-xs-12">
+      <form>
+        <a><span class="glyphicon glyphicon-chevron-left margin" aria-hidden="true"></span><span>BACK</span></a>
+        <h3>Sign up</h3>
+        <p>Join now for free ride credit</p>
+        <hr>
+        <div class="input-group">
+         <p class="input-group-addon b" id="basic-addon1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></p>
+         <input type="number" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group margin">
+         <p class="input-group-addon b" id="basic-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p>
+         <input type="number" class="form-control" placeholder="Mail" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn bpink btn-lg btn-block" disabled="disabled">SEND</button>
+      </form>
+     </div><!--col12-->
+    </div><!--row-->
+   </div><!--container-->
+ </div><!--laststep-->
+
+ <div id="listo">
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-xs-12">
+      <h1>!Welcome to Lyft!</h1>
+      <h1><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></h1>
+     </div><!--col12-->
+    </div><!--row-->
+   </div><!--container-->
+ </div><!--laststep-->
 
 
-
+</div><!--loader-->
 
 
 
