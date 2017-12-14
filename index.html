@@ -51,11 +51,11 @@
               <li><img src="assets/img/if_United-States-of-America_298411.png" class="img-responsive"></li>
             </ul>
           </div><!-- /btn-group -->
-          <input type="number" class="form-control" aria-label="..." placeholder="Enter your phone number">
+          <input id="phone" type="number" class="form-control" aria-label="..." placeholder="Enter your phone number">
         </div><!-- /input-group -->
         <p class="margin">We'll send a text to verify you phone</p>
         <button id="code" type="button" class="btn b" style="margin-bottom: 20px;">Generate Code</button>
-        <button id="paso2" type="button" class="btn bpink btn-lg btn-block">NEXT</button>
+        <button id="paso2" type="button" class="btn bpink btn-lg btn-block" disabled="disabled">NEXT</button>
       </form>
      </div><!--col12-->
     </div><!--row-->
@@ -73,11 +73,13 @@
         <hr>
         <div class="input-group">
          <p class="input-group-addon b" id="basic-addon1">LAB</p>
-         <input type="number" class="form-control" placeholder="3 Digits" aria-describedby="basic-addon1">
+         <input id="insertCode" type="number" class="form-control" placeholder="3 Digits" aria-describedby="basic-addon1">
         </div>
-        <p class="margin">Enter the code send to +56 9 61918586</p>
+        <div id="text-number">
+          <!--aqui va numero-->
+        </div>
         <button id="resend" type="button" class="btn b" style="margin-bottom: 20px;">Resend code</button>
-        <button id="paso3" type="button" class="btn bpink btn-lg btn-block">NEXT</button>
+        <button id="paso3" type="button" class="btn bpink btn-lg btn-block" disabled="disabled">NEXT</button>
       </form>
      </div><!--col12-->
     </div><!--row-->
@@ -101,6 +103,11 @@
         <div class="input-group margin">
          <p class="input-group-addon b" id="basic-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p>
          <input type="number" class="form-control" placeholder="Mail" aria-describedby="basic-addon1">
+        </div>
+         <div class="checkbox">
+          <label>
+            <input type="checkbox">I agree to Lyft's <a href="#" style="color:#e10090; font-weight: bold;">Terms of Service</a>
+          </label>
         </div>
         <button id="paso4" type="button" class="btn bpink btn-lg btn-block">SEND</button>
       </form>
