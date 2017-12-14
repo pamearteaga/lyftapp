@@ -13,10 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>Lift</title>
 </head>
+<body>
+  <!-- loader
 <body onload="splash()">
-  <!-- loader-->
 <div id="loader"><img src="assets/img/logo-pink.png" style="width: 80%;"></div>
-<div id="content" class="deslizar hidden">
+<div id="content" class="deslizar hidden">-->
 
 
   <header id="inicio" class="fondo">
@@ -25,13 +26,13 @@
      <div class="col-xs-12" align="center"><img src="assets/img/lyftlyfe_blanco.png" class="img-responsive"></div>
       <div align="center">
       <div class="col-xs-6"><button type="button" class="btn bpink">LOG IN</button></div>
-      <div class="col-xs-6"><button type="button" class="btn bpink">SING UP</button></div>
+      <div class="col-xs-6"><button id="paso1" type="button" class="btn bpink">SING UP</button></div>
      </div>
     </div><!--row-->
    </div><!--container -->
   </header><!--inicio-->
 
-  <div id="singup">
+  <div id="singup" class="hidden">
    <div class="container-fluid">
     <div class="row">
      <div class="col-xs-12">
@@ -53,14 +54,15 @@
           <input type="number" class="form-control" aria-label="..." placeholder="Enter your phone number">
         </div><!-- /input-group -->
         <p class="margin">We'll send a text to verify you phone</p>
-        <button type="button" class="btn bpink btn-lg btn-block" disabled="disabled">NEXT</button>
+        <button id="code" type="button" class="btn b" style="margin-bottom: 20px;">Generate Code</button>
+        <button id="paso2" type="button" class="btn bpink btn-lg btn-block">NEXT</button>
       </form>
      </div><!--col12-->
     </div><!--row-->
    </div><!--container-->
   </div><!--singup-->
 
-    <div id="verify">
+    <div id="verify" class="hidden">
    <div class="container-fluid">
     <div class="row">
      <div class="col-xs-12">
@@ -74,15 +76,15 @@
          <input type="number" class="form-control" placeholder="3 Digits" aria-describedby="basic-addon1">
         </div>
         <p class="margin">Enter the code send to +56 9 61918586</p>
-        <button type="button" class="btn b" style="margin-bottom: 20px;">Resend code</button>
-        <button type="button" class="btn bpink btn-lg btn-block" disabled="disabled">NEXT</button>
+        <button id="resend" type="button" class="btn b" style="margin-bottom: 20px;">Resend code</button>
+        <button id="paso3" type="button" class="btn bpink btn-lg btn-block">NEXT</button>
       </form>
      </div><!--col12-->
     </div><!--row-->
    </div><!--container-->
  </div><!--verify-->
 
- <div id="laststep">
+ <div id="laststep" class="hidden">
    <div class="container-fluid">
     <div class="row">
      <div class="col-xs-12">
@@ -100,26 +102,27 @@
          <p class="input-group-addon b" id="basic-addon1"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></p>
          <input type="number" class="form-control" placeholder="Mail" aria-describedby="basic-addon1">
         </div>
-        <button type="button" class="btn bpink btn-lg btn-block" disabled="disabled">SEND</button>
+        <button id="paso4" type="button" class="btn bpink btn-lg btn-block">SEND</button>
       </form>
      </div><!--col12-->
     </div><!--row-->
    </div><!--container-->
  </div><!--laststep-->
 
- <div id="listo">
+ <div id="listo" class="hidden">
    <div class="container-fluid">
     <div class="row">
      <div class="col-xs-12">
+      <a><span class="glyphicon glyphicon-chevron-left margin" aria-hidden="true"></span><span>BACK</span></a>
+      <img src="assets/img/logo-pink.png" style="width: 50%; margin-left: 28%; margin-top: 30px;" class="img-responsive">
       <h1>!Welcome to Lyft!</h1>
-      <h1><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></h1>
      </div><!--col12-->
     </div><!--row-->
    </div><!--container-->
  </div><!--laststep-->
 
 
-</div><!--loader-->
+<!--</div>loader-->
 
 
 
