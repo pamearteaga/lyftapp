@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800');
+
+body{
+  background-color: #4f0064;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23b0057e' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+
+.fondo{
+  width: 100%;
+  height: auto;
+  background-image: url("../img/2014.jpg");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bpink{
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid #e10090;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.bpink:hover {
+	color: white;
+  background-color: #e10090;
+}
+
+header button{
+  vertical-align: bottom;
+  text-align: center;
+}
+
+header img{
+  width: 80%;
+  height: auto;
+  margin:60% 0 20% 0;
+}
